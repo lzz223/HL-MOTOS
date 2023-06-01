@@ -1,0 +1,211 @@
+/* Reset CSS */
+*, *:after, *:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  /* Fundo do menu */
+  .menu{
+    background: #000;
+  }
+  /* Remove as bolinhas do lado das listas */
+  .menu .menu-list, .menu .sub-menu{
+    list-style: none;
+  }
+  /* Configura todos os links do nosso menu */
+  .menu a{
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing:0.2em;
+  }
+  /* Faz os <li>s ficarem na horizontal */
+  .menu > .menu-list > li{
+    float: left;
+    position: relative;
+  }
+  /* Configura os links do menu principal */
+  .menu > .menu-list > li > a {
+    padding: 20px;
+    margin: 0 5px;
+    background: #000;
+  }
+  /* Configura o fundo do menu principal quando com mouse hover */
+  .menu > .menu-list > li:hover a {
+    background: #1d1b1b;
+  }
+  /* Mostra o submenu no evento de mouse hover */
+  .menu > .menu-list > li:hover > .sub-menu {
+    display: block;
+  }
+  /* Configura o estilo do submenu */
+  .menu > .menu-list > li > .sub-menu {
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    background: blue;
+    min-width: 200px;
+    z-index: 1000;
+    display: none;
+  }
+  /* Configura os links do submenu */
+  .menu > .menu-list > li > .sub-menu > li > a {
+      padding: 10px 20px;
+  }
+  /* Clearfix para o menu */
+  .menu:after {
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+  }
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu {
+    list-style: none;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu li a {
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: fantasy;
+}
+
+#menu li a:hover {
+    background-color: aqua;
+}
+
+.edit {
+    width: 30px;
+    height: 40px;
+    padding-top: 20px;
+}
+
+.titulo {
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    justify-content: center;
+    display: flex;
+    font-size: 45px;
+    font-family: fantasy;
+}
+
+.images {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    background-color: rgb(34, 31, 31);
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 280px;
+    padding-top: 110px;
+}
+
+.footer_rodape {
+    margin-top: 400px;
+    color:blue;
+}
+
+h1 {
+    font-size: 40px;
+  
+}
+
+.login{
+
+ margin-left: 1120px;
+}
+body{
+background-color: #000;
+}
+
+.Start {
+  color: #fff;
+  font-family: fantasy;
+}
+
+.titan {
+color: #fff;
+font-family: fantasy;
+}
+
+.twister {
+  color: #fff;
+  font-family: fantasy;
+}
+.xre190 {
+  color: #fff;
+  font-family: fantasy;
+}
+.xre300 {
+  color: #fff;
+  font-family: fantasy;
+}
+.pcx {
+  color: #fff;
+  font-family: fantasy;
+}
+.adv {
+  color: #fff;
+  font-family: fantasy;
+}
+.africatwin {
+  color: #fff;
+  font-family: fantasy;
+}
+.biz {
+  color: #fff;
+  font-family: fantasy;
+}
+.bros {
+  color: #fff;
+  font-family: fantasy;
+}
+.cb500f {
+  color: #fff;
+  font-family: fantasy;
+}
+.cb500x {
+  color: #fff;
+  font-family: fantasy;
+}
+.cbr650 {
+  color: #fff;
+  font-family: fantasy;
+}
+.cbr1000 {
+  color: #fff;
+  font-family: fantasy;
+}
+
+.fundo{
+  color: #000;
+}
+
+.slidestreet {
+  
+}
