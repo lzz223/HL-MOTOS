@@ -1,105 +1,46 @@
-/* Reset CSS */
-*, *:after, *:before{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-size: 14px;
-    line-height: 1.5;
-  }
-  /* Fundo do menu */
-  .menu{
-    background: #1c1a1a;
-  }
-  /* Remove as bolinhas do lado das listas */
-  .menu .menu-list, .menu .sub-menu{
-    list-style: none;
-  }
-  /* Configura todos os links do nosso menu */
-  .menu a{
-    color: #fff;
-    text-decoration: none;
-    display: block;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing:0.2em;
-  }
-  /* Faz os <li>s ficarem na horizontal */
-  .menu > .menu-list > li{
-    float: left;
-    position: relative;
-  }
-  /* Configura os links do menu principal */
-  .menu > .menu-list > li > a {
-    padding: 20px;
-    margin: 0 5px;
-    background: #1c1a1a;
-  }
-  /* Configura o fundo do menu principal quando com mouse hover */
-  .menu > .menu-list > li:hover a {
-    background: #131111;
-  }
-  /* Mostra o submenu no evento de mouse hover */
-  .menu > .menu-list > li:hover > .sub-menu {
-    display: block;
-  }
-  /* Configura o estilo do submenu */
-  .menu > .menu-list > li > .sub-menu {
-    position: absolute;
-    top: 50px;
-    left: 5px;
-    background: blue;
-    min-width: 200px;
-    z-index: 1000;
-    display: none;
-  }
-  /* Configura os links do submenu */
-  .menu > .menu-list > li > .sub-menu > li > a {
-      padding: 10px 20px;
-  }
-  /* Clearfix para o menu */
-  .menu:after {
-    content: '.';
-    display: block;
-    clear: both;
-    visibility: hidden;
-    line-height: 0;
-    height: 0;
-  }
-* {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
+*{
+  transition: all 0.2s;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: sans-serif;
+   font-size: 14px;
+   line-height: 1.5;
+ }
+ 
+ html {
+   scroll-behavior: smooth;
+   overflow-x: hidden;
+ }
+ /* Fundo do site */
+ body{
+   background-color: #000 ;
+   width: 100vw;
+   max-width: 100vw;
+ }
+  
+/* Menu */
+.newmenu {
+  width: 100vw;
+  height: 70px;
+  background-color: #202020;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px 0 15px;
 }
 
-#menu {
-    list-style: none;
-    padding: 0;
-    background-color: rgb(255, 255, 255);
+.menu-item{
+  text-decoration: none;
+  color: #fff;
+  background-color: #383838 ; 
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
+  margin: 0 5px 0 5px;
 }
 
-#menu li {
-    display: inline;
-}
-
-#menu li a {
-    text-decoration: none;
-    padding: 10px;
-    display: inline-block;
-    text-decoration: none;
-    font-family: fantasy;
-}
-
-#menu li a:hover {
-    background-color: aqua;
-}
-
-.edit {
-    width: 30px;
-    height: 40px;
-    padding-top: 20px;
+.menu-item:hover {
+  background-color: #404040;
 }
 
 .titulo {
@@ -111,18 +52,14 @@
     font-family: fantasy;
 }
 
-.images {
-    display: flex;
-    justify-content: space-between;
-}
-
-.container {
+.cartao {
     background-color: rgb(34, 31, 31);
     color: white;
     display: flex;
     justify-content: center;
     height: 280px;
     padding-top: 110px;
+    max-width: 100vw;
 }
 
 .footer_rodape {
@@ -135,10 +72,6 @@ h1 {
   
 }
 
-.login{
-
-  margin-left: 1150px;
-}
 body{
 background-color: #000;
 }
@@ -146,117 +79,31 @@ background-color: #000;
   box-sizing: border-box;
 }
 
-
-/*----------------------------------------------------------------------------------------------------*/
-
-* {
-  box-sizing: border-box;
-}
-
-/* Slideshow container */
-.slideshow-container {
+.owl-carousel, .owl-carousel .owl-item {
+  -webkit-tap-highlight-color: transparent;
   position: relative;
-  margin: auto;
-  max-width: 100%;
-  height: 500px;
-  overflow: hidden;
 }
 
-/* Hide the slides by default */
-.mySlides {
-  display: none;
+.owl-theme .owl-dots, .owl-theme .owl-nav {
+  text-align: left;
+  -webkit-tap-highlight-color: transparent;
 }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
   position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
   right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit of transparency */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #383838;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.active,
-.dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@keyframes fade {
-  from {
-    opacity: 0.4;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-/* Adjust image width and height to fit the container */
-.mySlides img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  object-position: center;
-}
-
-.slidemotos {
-color: #fff;
-font-family: fantasy;
+.owl-carousel .owl-nav button.owl-prev {
+  right: 36px;
 }
